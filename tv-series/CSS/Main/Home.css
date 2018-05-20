@@ -1,0 +1,95 @@
+﻿.SeriesList {
+    width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.label {
+    display: flex;
+    align-items: center;
+}
+
+
+.left-label {
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 1rem;
+}
+
+.right-label {
+    margin-left: auto;
+    margin-right: 1rem;
+    color: #91a7ff;
+    cursor: pointer;
+    user-select: none;
+}
+
+.ListWrapper {
+    display: flex;
+    white-space: no-wrap;
+    overflow-x: auto;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+}
+
+.list {
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+    margin-bottom: 1rem;
+    background: white;
+    width: 280px;
+    height: 420px;
+    padding: 1rem;
+}
+
+.thumbnail {
+}
+
+img {
+    width: 250px;
+    height: 350px;
+}
+
+.title {
+    user-select: none;
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding-left: 0.35rem;
+    padding-top: 0.35rem;
+    padding-bottom: 0.35rem;
+}
+
+@media screen and (max-width: 1024px) {
+    .SeriesList {
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .SeriesList {
+        width: 100%;
+    }
+
+    .list {
+        width: 110px;
+        height: 190px;
+        padding: 0;
+    }
+
+    img {
+        width: 110px;
+        height: 150px;
+    }
+
+    .title {
+        font-size: 0.75rem;
+        font-weight: 600;
+    }
+}

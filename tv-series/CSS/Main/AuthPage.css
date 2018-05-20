@@ -1,0 +1,75 @@
+﻿form {
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 500px;
+    transform: translate(-50%, -50%);
+    height: auto;
+    background: #dee2e6;
+
+}
+
+a {
+    text-decoration: none;
+    color: blue;
+    font-weight: 600;
+}
+
+
+.Logo {
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 2rem;
+    border-bottom: 1px solid #868e96;
+    transition: all .4s;
+    font-weight: 600;
+
+
+}
+
+    .Logo:hover {
+        background: #e9ecef;
+    }
+
+.contents {
+    display: flex;
+    flex-direction: column;
+}
+
+.Line {
+   padding: 1rem;
+    
+}
+
+.label {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-top: 1rem;
+}
+
+input {
+    font-size: 1.5rem;
+    outline: none;
+    border: none;
+}
+
+.label + input {
+    margin-top: 1rem;
+}
+
+.ButtonWrapper {
+    padding: 1rem;
+
+}
+
+.desc {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1rem;
+}
+
+.leading {
+
+}
+

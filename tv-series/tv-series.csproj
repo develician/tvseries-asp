@@ -75,10 +75,68 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="CSS\Base.css" />
+    <Content Include="CSS\Includes\PageFooter.css" />
+    <Content Include="CSS\Includes\PageHeader.css" />
+    <Content Include="CSS\Main\AuthPage.css" />
+    <Content Include="CSS\Main\Home.css" />
+    <Content Include="Main\AuthPage.aspx" />
+    <Content Include="Main\Home.aspx" />
+    <Content Include="Main\Includes\Footer.aspx" />
+    <Content Include="Main\Includes\Header.aspx" />
+    <Content Include="Main\Includes\PageFooter.html" />
+    <Content Include="Main\Includes\PageHeader.html" />
+    <Content Include="Main\Introduction.aspx" />
+    <Content Include="Main\RegisterPage.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Main\AuthPage.aspx.cs">
+      <DependentUpon>AuthPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main\AuthPage.aspx.designer.cs">
+      <DependentUpon>AuthPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Main\Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main\Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Main\Includes\Footer.aspx.cs">
+      <DependentUpon>Footer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main\Includes\Footer.aspx.designer.cs">
+      <DependentUpon>Footer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Main\Includes\Header.aspx.cs">
+      <DependentUpon>Header.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main\Includes\Header.aspx.designer.cs">
+      <DependentUpon>Header.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Main\Introduction.aspx.cs">
+      <DependentUpon>Introduction.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main\Introduction.aspx.designer.cs">
+      <DependentUpon>Introduction.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Main\RegisterPage.aspx.cs">
+      <DependentUpon>RegisterPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main\RegisterPage.aspx.designer.cs">
+      <DependentUpon>RegisterPage.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Uploads\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
