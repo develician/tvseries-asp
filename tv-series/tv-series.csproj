@@ -76,10 +76,13 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="CSS\Base.css" />
+    <Content Include="CSS\Includes\Introduction.css" />
     <Content Include="CSS\Includes\PageFooter.css" />
     <Content Include="CSS\Includes\PageHeader.css" />
+    <Content Include="CSS\Independents\MyInfoPage.css" />
     <Content Include="CSS\Main\AuthPage.css" />
     <Content Include="CSS\Main\Home.css" />
+    <Content Include="CSS\Posts\PostDetail.css" />
     <Content Include="Main\AuthPage.aspx" />
     <Content Include="Main\Home.aspx" />
     <Content Include="Main\Includes\Footer.aspx" />
@@ -87,7 +90,9 @@
     <Content Include="Main\Includes\PageFooter.html" />
     <Content Include="Main\Includes\PageHeader.html" />
     <Content Include="Main\Introduction.aspx" />
+    <Content Include="Main\MyInfoPage.aspx" />
     <Content Include="Main\RegisterPage.aspx" />
+    <Content Include="Posts\PostDetail.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -126,12 +131,26 @@
     <Compile Include="Main\Introduction.aspx.designer.cs">
       <DependentUpon>Introduction.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Main\MyInfoPage.aspx.cs">
+      <DependentUpon>MyInfoPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main\MyInfoPage.aspx.designer.cs">
+      <DependentUpon>MyInfoPage.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Main\RegisterPage.aspx.cs">
       <DependentUpon>RegisterPage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Main\RegisterPage.aspx.designer.cs">
       <DependentUpon>RegisterPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Posts\PostDetail.aspx.cs">
+      <DependentUpon>PostDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Posts\PostDetail.aspx.designer.cs">
+      <DependentUpon>PostDetail.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -149,7 +168,7 @@
     <VisualStudio>
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
         <WebProjectProperties>
-          <UseIIS>True</UseIIS>
+          <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>50568</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>

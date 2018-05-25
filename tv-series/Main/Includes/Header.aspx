@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="~/CSS/Includes/PageHeader.css" />
     <link rel="stylesheet" href="~/CSS/Includes/PageFooter.css" />
     <link rel="stylesheet" href="~/CSS/Base.css" />
+    <link rel="stylesheet" href="~/CSS/Includes/Introduction.css" />
     <link href="~/CSS/Main/Home.css" rel="stylesheet" />
     <script runat="server">
 
@@ -20,6 +21,11 @@
             {
                 Menu2.Visible = false;
                 
+
+            } else
+            {
+                Menu3.Visible = false;
+                Menu4.Visible = false;
             }
         }
 
@@ -40,6 +46,17 @@
         protected void GoToAuthPage(object sender, EventArgs e)
         {
             Response.Redirect("/Main/AuthPage.aspx");
+        }
+
+        protected void Logout(object sender, EventArgs e)
+        {
+            Session.Remove("loggedInfo");
+            Response.Redirect("/Main/Home.aspx");
+        }
+
+        protected void GoToMyInfo(object sender, EventArgs e)
+        {
+            Response.Redirect("/Main/MyInfoPage.aspx");
         }
     </script>
 </head>
@@ -64,6 +81,10 @@
                             <asp:Button runat="server" OnClick="GoToIntroduction" ID="Menu1" BackColor="#dea326" BorderColor="#dea326" BorderStyle="None" Height="40px" Text="소개 페이지" ForeColor="White" Font-Bold="true" Font-Size="Large">
                             </asp:Button>
                             <asp:Button runat="server" OnClick="GoToAuthPage" ID="Menu2" BackColor="#dea326" BorderColor="#dea326" BorderStyle="None" Height="40px" Text="로그인 / 회원가입" ForeColor="White" Font-Bold="true" Font-Size="Large">
+                            </asp:Button>
+                            <asp:Button runat="server" OnClick="GoToMyInfo" ID="Menu4" BackColor="#dea326" BorderColor="#dea326" BorderStyle="None" Height="40px" Text="내 정보" ForeColor="White" Font-Bold="true" Font-Size="Large">
+                            </asp:Button>
+                            <asp:Button runat="server" OnClick="Logout" ID="Menu3" BackColor="#dea326" BorderColor="#dea326" BorderStyle="None" Height="40px" Text="로그아웃" ForeColor="White" Font-Bold="true" Font-Size="Large">
                             </asp:Button>
                         </div>
                     </div>

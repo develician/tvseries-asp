@@ -1,0 +1,97 @@
+﻿a {
+    text-decoration: inherit;
+    color: inherit;
+}
+
+.SeriesHeader {
+    width: 100%;
+    height: 350px;
+    background: #dea326;
+}
+
+@media screen and (max-width: 1024px) {
+    .SeriesHeader {
+        height: 250px;
+    }
+}
+
+.wrapper {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    width: 1600px;
+    margin: 0 auto;
+    display: flex;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+@media screen and (max-width: 1600px) {
+    .wrapper {
+        width: 1200px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .wrapper {
+        width: 1024px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .wrapper {
+        width: 768px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .wrapper {
+        width: 100%;
+    }
+}
+
+header {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+.logo {
+    margin-top: 0.5rem;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.menu-button {
+    margin-left: auto;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+}
+
+.header-contents {
+    flex: 1;
+    display: flex;
+}
+
+.thumbnail-area {
+    width: 300px;
+    position: relative;
+    padding-top: 100px;
+}
+
+@media screen and (max-width: 1024px) {
+    .thumbnail-area {
+        padding-top: 50px;
+        width: 150px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .thumbnail-area {
+        display: none;
+    }
+}

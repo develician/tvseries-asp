@@ -1,0 +1,43 @@
+﻿.IntroductionWrapper {
+    width: 1024px;
+    margin: 0 auto;
+}
+
+.Introduction {
+    margin-top: 2rem;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    background: white;
+}
+
+.Contents {
+    padding: 1rem;
+}
+
+.Line {
+
+}
+
+.Label {
+    font-size: 1.5rem;
+    font-weight: 600;
+    border-bottom: 2px solid #dee2e6;
+}
+
+.Content {
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.Label + .Content {
+    margin-top: 1rem;
+}
+
+.Line + .Line {
+    margin-top: 2rem;
+}
+
+@media screen and (max-width: 1024px) {
+    .IntroductionWrapper {
+        width: 100%;
+    }
+}
