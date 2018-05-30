@@ -1,0 +1,96 @@
+﻿.MainForm {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.AdminPageHeader {
+    background: #9775fa;
+
+}
+
+.contents {
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Logo {
+    font-size: 2rem;
+    font-weight: 800;
+    color: white;
+    user-select: none;  
+}
+
+a {
+    text-decoration: none;
+}
+
+main {
+    min-height: calc(100vh - 15rem);
+    
+}
+
+.ItemBoxWrapper {
+    width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    
+}
+
+
+@media screen and (max-width: 1024px) {
+    .ItemBoxWrapper {
+        width: 100%;
+    }
+}
+
+
+
+
+.ItemBox {
+    background: #5c7cfa;
+    width: 200px;
+    height: 200px;
+    flex: 1;
+    padding: 1rem;
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    border-radius: 3px;
+}
+
+    .ItemBox:hover {
+        background: #748ffc;
+    }
+
+    .ItemBox:active {
+        background: #5c7cfa;
+    }
+
+.ItemBox + .ItemBox {
+    
+}
+
+.Text {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: white;
+}
+
+.AdminPageFooter {
+    height: 10rem;
+    background: #ced4da;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.FooterLogo {
+    font-size: 2rem;
+    font-weight: 800;
+    color: white;
+}

@@ -66,9 +66,34 @@
             String sql = "SELECT * FROM tvseries.dbo.Account WHERE username = @name";
             SqlCommand cmd = new SqlCommand(sql, conn);
             cmd.Parameters.AddWithValue("@name", username.Text);
+
+            String adminCheckSQL = "SELECT isAdmin FROM tvseries.dbo.Account WHERE username = @username";
+            SqlCommand adminCheckCommand = new SqlCommand(adminCheckSQL, conn);
+            adminCheckCommand.Parameters.AddWithValue("@username", username.Text);
+
+
             try
             {
                 conn.Open();
+
+
+                // Session with Admin Check
+
+                SqlDataReader checkReader = adminCheckCommand.ExecuteReader();
+                while(checkReader.Read())
+                {
+                    if(checkReader["isAdmin"].ToString() != "")
+                    {
+                        Session["isAdmin"] = "YES";
+                    } else
+                    {
+                        Session["isAdmin"] = "NO";
+                    }
+                }
+
+                checkReader.Close();
+
+                // Session With username
                 SqlDataReader rd = cmd.ExecuteReader();
 
                 while(rd.Read())

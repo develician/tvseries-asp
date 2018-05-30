@@ -1,0 +1,60 @@
+﻿a {
+    text-decoration: none;
+}
+
+
+.MainForm {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.AdminPageHeader {
+    background: #9775fa;
+}
+
+.contents {
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Logo {
+    font-size: 2rem;
+    font-weight: 800;
+    color: white;
+    user-select: none;
+}
+
+
+main {
+    min-height: calc(100vh - 15rem);
+}
+
+
+.DataListWrapper {
+    width: 1024px;
+    margin: 0 auto;
+
+}
+
+.UserDataList {
+    width: 100%;
+}
+
+
+.AdminPageFooter {
+    height: 10rem;
+    background: #ced4da;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.FooterLogo {
+    font-size: 2rem;
+    font-weight: 800;
+    color: white;
+}

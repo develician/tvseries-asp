@@ -75,6 +75,10 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Admin\AdminHome.aspx" />
+    <Content Include="Admin\UserManagement.aspx" />
+    <Content Include="CSS\Admin\AdminHome.css" />
+    <Content Include="CSS\Admin\UserManagement.css" />
     <Content Include="CSS\Base.css" />
     <Content Include="CSS\Includes\Introduction.css" />
     <Content Include="CSS\Includes\PageFooter.css" />
@@ -96,6 +100,20 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Admin\AdminHome.aspx.cs">
+      <DependentUpon>AdminHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminHome.aspx.designer.cs">
+      <DependentUpon>AdminHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\UserManagement.aspx.cs">
+      <DependentUpon>UserManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\UserManagement.aspx.designer.cs">
+      <DependentUpon>UserManagement.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Main\AuthPage.aspx.cs">
       <DependentUpon>AuthPage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
