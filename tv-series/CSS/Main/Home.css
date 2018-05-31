@@ -1,4 +1,106 @@
-﻿.SeriesList {
+﻿.MainForm {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.PageHeader {
+    background: #dea326;
+}
+
+
+.contents {
+    height: 5rem;
+    display: flex;
+    padding: 3rem;
+    align-items: center;
+}
+.LeftContents {
+
+}
+
+.RightContents {
+    margin-left: auto;
+}
+
+.MenuButton {
+    border: none;
+    outline: none;
+    background: #dea326;
+    color: white;
+    cursor: pointer;
+    font-size: 1.5rem;
+
+}
+
+    .MenuButton:hover {
+        color: #868e96;
+    }
+    .MenuButton:active {
+        color: white;
+    }
+
+.Logo {
+    font-size: 2rem;
+    font-weight: 800;
+    color: white;
+    user-select: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+
+
+.SideBarWrapper {
+    transform: translate(0%);
+    transition: all 0.1s ease-in-out;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    right: 0;
+    top: 0;
+    background: #dea326;
+    height: 100vh;
+    width: 300px;
+}
+
+.SideBar {
+}
+
+.sideBarContents {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu {
+    padding: 1rem;
+    user-select: none;
+    cursor: pointer;
+}
+
+.text {
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+.SeriesList {
     width: 1300px;
     margin: 0 auto;
     display: flex;
