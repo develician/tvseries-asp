@@ -37,13 +37,35 @@ main {
 .DataListWrapper {
     width: 1024px;
     margin: 0 auto;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
 
+@media screen and (max-width: 1024px) {
+    .DataListWrapper {
+        width: 90%;
+    }
 }
 
 .UserDataList {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     width: 100%;
+    background: white;
+    font-size: 1.25rem;
+    font-weight: 600;
 }
 
+    .UserDataList td {
+        padding: 1rem;
+        width: 100%;
+        border: 1px solid #ced4da;
+        color: black;
+    }
+
+a {
+    text-decoration: none;
+    color: black;
+}
 
 .AdminPageFooter {
     height: 10rem;
@@ -58,3 +80,68 @@ main {
     font-weight: 800;
     color: white;
 }
+
+.ButtonWrapper {
+    display: flex;
+    align-items: center;
+    width: 1024px;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 1024px) {
+    .ButtonWrapper {
+        width: 90%;
+    }
+}
+
+.prevButton {
+    border: none;
+    outline: none;
+    background: #b197fc;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    padding-right: 0.3rem;
+    padding-left: 0.3rem;
+    color: white;
+    font-size: 1.25rem;
+    font-weight: 600;
+    user-select: none;
+    cursor: pointer;
+}
+
+    .prevButton:hover {
+        background: #d0bfff;
+    }
+
+    .prevButton:active {
+        background: #b197fc;
+    }
+
+.page {
+    flex: 1;
+    text-align: center;
+}
+
+.nextButton {
+    border: none;
+    outline: none;
+    background: #b197fc;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    padding-right: 0.3rem;
+    padding-left: 0.3rem;
+    color: white;
+    font-size: 1.25rem;
+    font-weight: 600;
+    user-select: none;
+    cursor: pointer;
+}
+
+    .nextButton:hover {
+        background: #d0bfff;
+    }
+
+    .nextButton:active {
+        background: #b197fc;
+    }

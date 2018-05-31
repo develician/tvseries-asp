@@ -41,9 +41,9 @@
                     </a>
                 </div>
                 <div class="ItemBox">
-                    <div class="Text">
+                    <a href="/Admin/Editor.aspx" class="Text">
                         포스팅
-                    </div>
+                    </a>
                 </div>
             </div>
         </main>

@@ -1,0 +1,161 @@
+﻿a {
+    text-decoration: none;
+}
+
+
+.MainForm {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.AdminPageHeader {
+    background: #9775fa;
+}
+
+.contents {
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Logo {
+    font-size: 2rem;
+    font-weight: 800;
+    color: white;
+    user-select: none;
+}
+
+
+main {
+    min-height: calc(100vh - 15rem);
+}
+
+.UserDetailWrapper {
+    width: 1024px;
+    margin: 0 auto;
+    background: white;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+.contents {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.Line {
+    display: flex;
+    flex-direction: column;
+}
+
+.Line + .Line {
+    margin-top: 2rem;
+}
+
+.Label {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.LabelText {
+    font-size: 1.25rem;
+}
+
+
+
+.InputWrapper {
+
+}
+
+.ButtonWrapper {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.UpdateButton {
+    background: #5c7cfa;
+    padding-top: 0.25rem;
+    padding-right: 0.3rem;
+    padding-bottom: 0.25rem;
+    padding-left: 0.25rem;
+    user-select: none;
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: white;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+    .UpdateButton:hover {
+        background: #748ffc;
+    }
+
+    .UpdateButton:active {
+        background: #5c7cfa;
+    }
+
+.RemoveButton {
+    background: #fa5252;
+    padding-top: 0.25rem;
+    padding-right: 0.3rem;
+    padding-bottom: 0.25rem;
+    padding-left: 0.25rem;
+    user-select: none;
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: white;
+    cursor: pointer;  
+    border: none;
+    outline: none;
+}
+
+    .RemoveButton:hover {
+        background: #ff6b6b;
+    }
+
+    .RemoveButton:active {
+        background: #fa5252;
+    }
+
+.UpdateButton + .RemoveButton {
+    margin-left: 1rem;
+}
+
+.UpdateButton + .UpdateButton {
+    margin-left: 1rem;
+}
+
+.Input {
+    height: 2rem;
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+}
+
+@media screen and (max-width: 1024px) {
+    .UserDetailWrapper {
+        width: 90%;
+    }
+}
+
+
+.AdminPageFooter {
+    height: 10rem;
+    background: #ced4da;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.FooterLogo {
+    font-size: 2rem;
+    font-weight: 800;
+    color: white;
+}
+

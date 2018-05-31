@@ -7,10 +7,10 @@
 // </자동 생성됨>
 //------------------------------------------------------------------------------
 
-namespace tv_series.Admin {
+namespace tv_series.CSS.Admin {
     
     
-    public partial class UserManagement {
+    public partial class Editor {
         
         /// <summary>
         /// form1 컨트롤입니다.
@@ -22,39 +22,57 @@ namespace tv_series.Admin {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
-        /// UserDataList 컨트롤입니다.
+        /// TitleTextBox 컨트롤입니다.
         /// </summary>
         /// <remarks>
         /// 자동 생성 필드입니다.
         /// 수정하려면 디자이너 파일에서 코드 숨김 파일로 필드 선언을 이동하세요.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DataList UserDataList;
+        protected global::System.Web.UI.WebControls.TextBox TitleTextBox;
         
         /// <summary>
-        /// PrevButton 컨트롤입니다.
+        /// GenreTextBox 컨트롤입니다.
         /// </summary>
         /// <remarks>
         /// 자동 생성 필드입니다.
         /// 수정하려면 디자이너 파일에서 코드 숨김 파일로 필드 선언을 이동하세요.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button PrevButton;
+        protected global::System.Web.UI.WebControls.TextBox GenreTextBox;
         
         /// <summary>
-        /// pageLabel 컨트롤입니다.
+        /// YearTextBox 컨트롤입니다.
         /// </summary>
         /// <remarks>
         /// 자동 생성 필드입니다.
         /// 수정하려면 디자이너 파일에서 코드 숨김 파일로 필드 선언을 이동하세요.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label pageLabel;
+        protected global::System.Web.UI.WebControls.TextBox YearTextBox;
         
         /// <summary>
-        /// NextButton 컨트롤입니다.
+        /// TrailerImageUpload 컨트롤입니다.
         /// </summary>
         /// <remarks>
         /// 자동 생성 필드입니다.
         /// 수정하려면 디자이너 파일에서 코드 숨김 파일로 필드 선언을 이동하세요.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button NextButton;
+        protected global::System.Web.UI.WebControls.FileUpload TrailerImageUpload;
+        
+        /// <summary>
+        /// StoryTextBox 컨트롤입니다.
+        /// </summary>
+        /// <remarks>
+        /// 자동 생성 필드입니다.
+        /// 수정하려면 디자이너 파일에서 코드 숨김 파일로 필드 선언을 이동하세요.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox StoryTextBox;
+        
+        /// <summary>
+        /// SubmitButton 컨트롤입니다.
+        /// </summary>
+        /// <remarks>
+        /// 자동 생성 필드입니다.
+        /// 수정하려면 디자이너 파일에서 코드 숨김 파일로 필드 선언을 이동하세요.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button SubmitButton;
     }
 }
